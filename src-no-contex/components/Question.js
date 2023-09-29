@@ -1,9 +1,7 @@
 import React from "react";
 import { Option } from "./";
-import { useQuizContext } from "../context/QuizContext";
 
-export const Question = ({ questions }) => {
-  const { answer, dispatch } = useQuizContext();
+export const Question = ({ questions, dispatch, answer }) => {
   return (
     <div>
       <h4>{questions.question}</h4>
